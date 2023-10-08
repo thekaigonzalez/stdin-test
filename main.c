@@ -9,4 +9,6 @@ main(void) {
     read(STDIN_FILENO, buf, 1024);
     
     write(STDOUT_FILENO, buf, 1024);
+
+    free(buf);
 }
